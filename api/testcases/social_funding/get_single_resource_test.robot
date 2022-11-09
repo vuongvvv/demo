@@ -10,7 +10,7 @@ Test Teardown     Delete All Sessions
 ${expected_color}    \#C74375
 
 *** Test Cases ***
-valid_id
+valid_id_returns_correct_data
     Get Single Resource    2
     Response Correct Code    ${SUCCESS_CODE}
     Response Property Should Be    data.id    ${2}
@@ -19,6 +19,6 @@ valid_id
     Response Property Should Be    data.color    ${expected_color}
     Response Property Should Be    data.pantone_value    17-2031
     
-not_found_id
+not_found_id_returns_not_found
     Get Single Resource    99
     Response Correct Code    ${NOT_FOUND_CODE}
