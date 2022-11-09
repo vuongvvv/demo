@@ -1,14 +1,10 @@
 *** Settings ***
-Documentation    GET LIST USERS
-
 Resource    ../../resources/init.robot
 Resource    ../../keywords/social_funding/social_funding_common.robot
 Resource    ../../keywords/social_funding/social_funding_apis_keywords.robot
 
 Test Setup    Create Social Funding Session
 Test Teardown     Delete All Sessions
-
-*** Variables ***
 
 *** Test Cases ***
 list_resource

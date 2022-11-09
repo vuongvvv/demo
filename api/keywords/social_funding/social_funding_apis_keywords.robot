@@ -3,7 +3,7 @@
 
 *** Keywords ***
 Get List Users
-    [Arguments]    ${parameter}
+    [Arguments]    ${parameter}=${None}
     ${RESP}    Get Request    ${SOCIAL_FUNDING_SESSION}    /api/users?${parameter}
     Set Test Variable    ${RESP}
     

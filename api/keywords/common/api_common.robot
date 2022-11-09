@@ -37,7 +37,7 @@ Verify Response Field Is Number
 Response Property Should Be
     [Arguments]    ${property}    ${value}    ${index}=0
     ${property_value}    Get Property Value From Json By Index    ${property}    ${index}
-    Should Be Equal    ${property_value}    ${value}
+    Should Be Equal As Strings    ${property_value}    ${value}
 
 Response Property Matches Regex
     [Arguments]    ${property}    ${regex}    ${index}=0
