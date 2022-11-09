@@ -6,3 +6,6 @@ robot -v ENV:production --loglevel TRACE --suitestatlevel 3  /Users/vuongvietvan
 robot -v ENV:production --loglevel TRACE --suitestatlevel 3  /Users/vuongvietvan/Documents/GitHub/demo/e2e-tests/testcases/social_funding/api/create_update_delete_user.robot
 docker run --shm-size=1g -v /Users/vuongvietvan/Documents/GitHub/demo:/opt/robotframework/tests:Z -e BROWSER=chrome vuongvvv/robot-framework-real-browser:latest /opt/robotframework/bin/run-tests-in-virtual-screen.sh
 - Focus on main case
+
+
+robot --loglevel TRACE --suitestatlevel 3 -t social_funding_test /Users/vuongvietvan/Documents/GitHub/demo/web
